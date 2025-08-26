@@ -10,10 +10,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    /* overflow-y: scroll; */
+    scrollbar-width: none;
 }
 
 body{
-    background-color: var(--papaya-whip);
+    /* background-color: var(--papaya-whip); */
     
     background-image:
         linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
@@ -41,7 +44,7 @@ header{
     justify-content: flex-end;
     align-items: center;
 
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(2px);
 
     position: sticky;
@@ -49,7 +52,7 @@ header{
     /* z-index: 100; */
 
     padding: 10px;
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .container-nav{
@@ -68,7 +71,8 @@ header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 
-    color: var(--cerulean);
+    /* color: var(--cerulean); */
+    color: rgba(0, 0, 0, 0.7);
     transition: 0.5s ease-out;
 }
 
@@ -90,7 +94,7 @@ main{
     margin: 10px 0;
     height: 700px;
 
-    border: 2px solid var(--cerulean);
+    /* border: 2px solid var(--cerulean); */
     /* transition: 2s ease-in; */
 }
 
