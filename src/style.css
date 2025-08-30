@@ -17,6 +17,8 @@
 
 body{
     /* background-color: var(--papaya-whip); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
     
     background-image:
         linear-gradient(to right, rgba(0,0,0,0.1) 1px, transparent 1px),
@@ -45,22 +47,31 @@ header{
     align-items: center;
 
     background-color: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(15px);
 
     position: sticky;
     top: 0;
-    /* z-index: 100; */
+    z-index: 10;
 
-    padding: 10px;
-    box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 3px;
+    margin: 10px 20px 10px 20px;
+    border-radius: 100px;
+    border: 3px solid #ddd;
+    box-shadow: 
+    8px 5px 15px rgba(0, 0, 0, 0.1),
+    -8px -8px 15px rgba(0,0,0,0.1),
+    inset 8px 8px 15px rgba(0, 0, 0, 0.1),
+    inset -8px -8px 15px rgba(0,0,0,0.1);
 }
 
 .container-nav{
     display: flex;
     flex-direction: row;
 
+
+    /* border:2px solid var(--cerulean);  */
     gap: 3rem;
-    padding: 7px;
+    padding: 10px;
     transform: translateX(-3rem);
 
 }
@@ -87,16 +98,107 @@ header{
 /* ----------------- MAIN ------------------ */
 main{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0;
+    /* height: 100%; */
+}
+
+.container-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+
+    padding: 20px;
+    margin: 30px 20px 10px 20px;
+
+    height: 100%;
+    width: 90%;
+
+    
+    border-radius: 5px;
+    border: 3px solid rgba(221, 221, 221, 0.8);
+    box-shadow: 
+        5px 5px 15px rgba(0, 0, 0, 0.1),
+        -5px -5px 15px rgba(0, 0, 0, 0.1),
+        inset 5px 5px 15px rgba(0, 0, 0, 0.1),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.1);
+        
+}
+
+.container-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.pinned,
+.recent,
+.others {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    margin: 10px 0;
-    height: 700px;
+    
 
-    /* border: 2px solid var(--cerulean); */
-    /* transition: 2s ease-in; */
+    padding: 20px;
+    margin: 20px;
+    gap: 20px;
+
+    border-radius: 15px;
+    box-shadow: 
+        5px 5px 15px rgba(0, 0, 0, 0.1),
+        -5px -5px 15px rgba(0, 0, 0, 0.1),
+        inset 5px 5px 15px rgba(0, 0, 0, 0.1),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.1);
+        
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(1px);
 }
+
+
+.container-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    border: 2px solid var(--cerulean);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid var(--cerulean);
+    border-radius: 10px;
+    box-shadow: 
+        5px 5px 15px rgba(0, 0, 0, 0.1),
+        -5px -5px 15px rgba(0, 0, 0, 0.1),
+        inset 5px 5px 15px rgba(0, 0, 0, 0.1),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.1);
+
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+}
+
 
 
 /* ----------------------------------------- */
@@ -110,6 +212,6 @@ footer{
     height: 100px;
 
     border: 2px solid var(--cerulean);
-    margin-bottom: 20px ;
+    margin:20px;
 }
 /* ----------------------------------------- */
